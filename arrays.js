@@ -31,8 +31,13 @@ family.shift();
 
 //Write a function called 'reverse' that takes in a string and returns that string in reverse order
 
+var srng = "This is a string";
+var newvar = srng.split("");
+
 var rev = function() {
-    family.reverse();
+    newvar.reverse();
 }
 
 rev();
+
+newvar.join("");

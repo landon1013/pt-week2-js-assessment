@@ -33,16 +33,27 @@ multiply(5, 5);
     obj.evens ----> [2,4,6];
     obj.odds ----> [1,3,5]
 */
-
-var evens = [2, 4, 6];
-var odds = [1, 3, 5];
+var myArray = [1, 2, 3, 4, 5, 6],
+evens = [],
+odds = [];
 
 var dice = function(arr) {
-    return number = {
+    for(var i = 0; i < myArray.length; i++){
+        if (myArray[i] % 2 === 0){
+          evens.push(myArray[i]);
+        }
+        else {
+            odds.push(myArray[i]);
+        }
+    }
+
+    return {
         evens: evens,
         odds: odds
-    }
-}
+    };
+};
+
+console.log(dice(myArray));
   
 
 /* we have an i5 processor and are curious as to what cores are needed when we are playing Minecraft.
@@ -71,8 +82,13 @@ var processors = [{
     output: 670
 }];
 
+var totalOutput = 0;
+
 var power = function(arr) {
-    for(var key in processors){
-        var total = processors.output //Not sure how to add all outputs together.....
+    for(var i = 0; i < processors.length; i++) {
+        if (processors[i].inUse) {
+          totalOutput += processors[i].output;
+        }
     }
+    console.log(totalOutput);
 }
