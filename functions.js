@@ -1,10 +1,10 @@
 //Write a function called 'welcome' that takes in a name (say Tyler), and then returns 'Welcome, Tyler' (or whatever the name was).
 
-  //Function definition here
+var welcome = function(name) {
+    return "Welcome, " + name;
+}
 
-
-  //Call the function here
-
+welcome(Landon);
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
@@ -12,11 +12,11 @@
 
 //Write a function called 'multiply' that takes in two numbers, multiplies them together, and returns the result
 
-  //Function definition here
+var multiply = function(num1, num2) {
+    return num1 * num2;
+}
 
-
-  //Call the function here
-
+multiply(5, 5);
 
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
@@ -33,12 +33,21 @@
     obj.evens ----> [2,4,6];
     obj.odds ----> [1,3,5]
 */
-  
+
+var evens = [2, 4, 6];
+var odds = [1, 3, 5];
+
+var dice = function(arr) {
+    return number = {
+        evens: evens,
+        odds: odds
+    }
+}
   
 
-/* we have an i5 processor and are currious as to what cores are needed when we are playing Minecraft.
+/* we have an i5 processor and are curious as to what cores are needed when we are playing Minecraft.
 
-write a function that can take in an array of objects and output the ammount of total processor output by all cores that are in use */
+write a function that can take in an array of objects and output the amount of total processor output by all cores that are in use */
 
 var processors = [{
     core: 1,
@@ -61,3 +70,9 @@ var processors = [{
     inUse: false,
     output: 670
 }];
+
+var power = function(arr) {
+    for(var key in processors){
+        var total = processors.output //Not sure how to add all outputs together.....
+    }
+}
